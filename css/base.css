@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}

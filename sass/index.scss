@@ -1,0 +1,268 @@
+// 引入
+@import 'normalize6.0.scss';
+// 因为 我们可能会在 base中 修改一些 样式
+@import 'base.scss';
+body {
+    min-width: 320px;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background: rgba(201, 21, 35, 0);
+    position: fixed;
+    z-index: 998;
+    padding-left: 60px;
+    padding-right: 60px;
+    a {
+        width: 60px;
+        height: 100%;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        top: 0px;
+        &.logo {
+            left: 0;
+            top: (40px-41px/2)/2;
+            background-image: url('../images/sprites.png');
+            background-size: 200px 200px;
+            background-position: 0 (-218px/2);
+            width: (111px/2);
+            height: (41px/2);
+        }
+        &.login {
+            right: 0;
+        }
+    }
+    span.galss {
+        position: absolute;
+        top: 10px;
+        left: 67px;
+        background-image: url(../images/sprites.png);
+        background-size: 200px 200px;
+        background-position: (-117px/2) (-219px/2);
+        width: 21px;
+        height: 20px;
+    }
+    input {
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        margin-top: 5px;
+        padding-left: 40px;
+        font-size: 18px;
+    }
+}
+
+.jd-banner {
+    overflow: hidden;
+    position: relative;
+    .banner-imgs {
+        width: 1000%;
+        transform: translateX(-10%);
+        li {
+            width: 10%;
+            float: left;
+            a {
+                width: 100%;
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .banner-circle {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-left: 10px;
+            border: 1px solid #fff;
+            &.current {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.jd-nav {
+    width: 100%;
+    padding-top: 10px;
+    li {
+        width: 25%;
+        float: left;
+        text-align: center;
+        a {
+            width: 100%;
+            display: block;
+            padding-top: 10px;
+            img {
+                width: 50%;
+                margin: 0 auto;
+            }
+            p {
+                color: black;
+                padding-top: 10px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.jd-main {
+    background-color: #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    .main-section {
+        min-height: 200px;
+        margin-top: 10px;
+        background-color: #fff;
+        .section-top {
+            height: 32px;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .zs-skill {
+        margin-top: 0;
+        .section-top {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: none;
+            .left {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                span:nth-of-type(1) {
+                    background: url("../images/seckill-icon.png");
+                    background-size: 20px 25px;
+                    width: 20px;
+                    height: 25px;
+                    margin: 0 6px;
+                }
+                span:nth-of-type(2) {
+                    padding-right: 10px;
+                    color: $jdRed;
+                }
+                ul {
+                    display: inline;
+                    flex: 1;
+                    li {
+                        float: left;
+                        width: 15px;
+                        height: 15px;
+                        line-height: 15px;
+                        font-size: 20px;
+                        color: #ffffff;
+                        text-align: center;
+                        background-color: rgba(0, 0, 0, .8);
+                        margin: 0 2px;
+                        &:nth-of-type(3n) {
+                            background-color: transparent;
+                            height: 15px;
+                            width: 5px;
+                            color: black;
+                            margin-right: 9px;
+                        }
+                    }
+                }
+            }
+            .right {
+                line-height: 32px;
+                padding-right: 10px;
+            }
+        }
+        .section-bottom {
+            padding: 10px 0;
+            width: 100%;
+            ul {
+                width: 100%;
+                li {
+                    width: 33.333%;
+                    a {
+                        display: block;
+                        width: 100%;
+                        border-right: 2px solid #ccc;
+                        img {
+                            width: 60%;
+                            margin: 0 auto;
+                        }
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    p:nth-of-type(1) {
+                        color: $jdRed;
+                        padding: 10px 0;
+                    }
+                }
+                li:last-child a {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .market {
+        .section-top {
+            padding-left: 20px;
+            h3 {
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: normal;
+                color: gray;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 3px;
+                    height: 18px;
+                    background-color: $jdRed;
+                    position: absolute;
+                    top: 6px;
+                    left: -10px;
+                }
+            }
+            //span {
+            //  margin-left: 10px;
+            //  display: inline-block;
+            //  width: 3px;
+            //  height: 16px;
+            //  background-color: $jdRed;
+            //}
+        }
+        .section-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .left {
+                width: 100%;
+                border-right: 1px solid #ccc;
+            }
+            .right {
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                a:nth-of-type(1) {
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .market2 {
+        .left {
+            width: 100%;
+            border-left: 1px solid #ccc;
+        }
+    }
+}

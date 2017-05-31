@@ -1,0 +1,58 @@
+//  公共的样式
+// 可能不同的 浏览器厂商 会为 浏览器内部的元素 添加一些 独有的样式
+// 为了去掉这些 不同的 外观 有一个 非常著名的 css normalize.css
+// normalize.css 让 不同的浏览器中显示的 效果 尽可能的一致
+// http://necolas.github.io/normalize.css/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // 字体  sans-serif 使用 系统的 默认 无衬线字体
+    // 可选
+    font-family: sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// 变为块 
+img {
+    display: block;
+}
+
+// 快速浮动
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+$jdRed:rgb(201,21,35);
+input {
+  border:none;
+  outline: none;
+}
+a {
+  -webkit-tap-highlight-color:transparent;
+}

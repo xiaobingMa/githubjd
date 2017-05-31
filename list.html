@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+</head>
+<!--<script>
+    window.onload = function() {
+
+        var ul = document.querySelector('.left ul');
+        var startY = 0;
+        var distanceY = 0; //默认上一次移动的距离为0
+        var delayDistance = 150; //拉动的距离
+        //计算最大值和最小值Y
+        var maxY = 0;
+        var minY = document.querySelector('html').offsetHeight - document.querySelector('header').offsetHeight - ul.offsetHeight;
+        console.log(minY);
+
+
+
+        ul.addEventListener('touchstart', function(event) {
+            startY = event.touches[0].clientY;
+            ul.style.transition = "none";
+            console.log(startY);
+        });
+
+        ul.addEventListener('touchmove', function(event) {
+            moveY = event.touches[0].clientY - startY; //手指移动的距离
+            console.log(startY);
+            var currentDistance = distanceY + moveY;
+            if (currentDistance < (maxY + delayDistance) && currentDistance > (minY - delayDistance)) {
+                ul.style.transform = "translateY(" + currentDistance + "px)"
+            }
+        });
+        ul.addEventListener('touchend', function() {
+            distanceY += moveY;
+            moveY = 0;
+            //吸附效果
+            if (distanceY > maxY) {
+                distanceY = maxY;
+            } else if (distanceY < minY) {
+                distanceY = minY;
+            }
+
+            ul.style.transition = "all .5s";
+            ul.style.transform = "translateY(" + distanceY + "px)";
+        });
+
+
+    }
+</script>-->
+<script src="../04-day/iscroll.js"></script>
+<script>
+    window.onload = function() {
+        var myScroll = new IScroll('.left');
+        var myScroll = new IScroll('.container');
+    }
+</script>
+
+<body>
+    <header>
+        <a href="javascript:;" class="menu"></a>
+        <input type="search" name="" value="" placeholder="分类搜索" autofocus>
+        <a href="javascript:;" class="back"></a>
+    </header>
+    <div class="list-main">
+        <div class="left">
+            <ul>
+                <li><a href="javascript:;" class="current">毛大衣1</a></li>
+                <li><a href="javascript:;">毛大衣2</a></li>
+                <li><a href="javascript:;">毛大衣3</a></li>
+                <li><a href="javascript:;">毛大衣4</a></li>
+                <li><a href="javascript:;">毛大衣5</a></li>
+                <li><a href="javascript:;">毛大衣6</a></li>
+                <li><a href="javascript:;">毛大衣7</a></li>
+                <li><a href="javascript:;">毛大衣8</a></li>
+                <li><a href="javascript:;">毛大衣9</a></li>
+                <li><a href="javascript:;">毛大衣10</a></li>
+                <li><a href="javascript:;">毛大衣11</a></li>
+                <li><a href="javascript:;">毛大衣12</a></li>
+                <li><a href="javascript:;">毛大衣13</a></li>
+                <li><a href="javascript:;">毛大衣14</a></li>
+                <li><a href="javascript:;">毛大衣15</a></li>
+                <li><a href="javascript:;">毛大衣16</a></li>
+                <li><a href="javascript:;">毛大衣17</a></li>
+                <li><a href="javascript:;">毛大衣18</a></li>
+                <li><a href="javascript:;">毛大衣19</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+                <li><a href="javascript:;">毛大衣20</a></li>
+            </ul>
+        </div>
+        <div class="right container">
+            <div>
+                <a href="javascript:;" class="banner"><img src="images/banner_1.png" alt=""></a>
+                <h5>热门搜索</h5>
+                <div class="content">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>大毛大衣</p>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
